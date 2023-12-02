@@ -1,7 +1,7 @@
 using AoC_2023;
 
 try {
-    Solutions.DayOne();
+    Solutions.DayTwo();
 } catch (Exception e) {
     Console.WriteLine(e.ToString());
 }
