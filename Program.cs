@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using AoC_2023;
+
+try {
+    Solutions.DayOne();
+} catch (Exception e) {
+    Console.WriteLine(e.ToString());
+}
