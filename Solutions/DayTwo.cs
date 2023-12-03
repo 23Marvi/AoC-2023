@@ -1,47 +1,9 @@
-namespace AoC_2023 {
-    internal static class Solutions {
-        internal static void DayOne() {
-            string[] input = FileReader.ReadFileLines(1);
-            int answerOne = 0, answerTwo = 0;
-
-            #region Solution 1
-            foreach (string row in input) {
-                char first = row.First(char.IsDigit);
-                char last = row.Last(char.IsDigit);
-
-                answerOne += int.Parse($"{first}{last}");
-            }
-            #endregion
-            #region Solution 2
-            for (int i = 0; i < input.Length; i++) {
-                string row = input[i];
-
-                row = row.Replace("one", "o1e");
-                row = row.Replace("two", "t2o");
-                row = row.Replace("three", "t3e");
-                row = row.Replace("four", "f4r");
-                row = row.Replace("five", "f5e");
-                row = row.Replace("six", "s6x");
-                row = row.Replace("seven", "s7n");
-                row = row.Replace("eight", "e8t");
-                row = row.Replace("nine", "n9e");
-
-                char first = row.First(char.IsDigit);
-                char last = row.Last(char.IsDigit);
-
-                answerTwo += int.Parse($"{first}{last}");
-            }
-            #endregion
-
-            Console.WriteLine($"DayOne 1: {answerOne}");
-            Console.WriteLine($"DayOne 2: {answerTwo}");
-        }
-
-        internal static void DayTwo() {
+namespace AoC_2023.Solutions {
+    internal class DayTwo {
+        internal static void SolveOne() {
             string[] input = FileReader.ReadFileLines(2);
-            int answerOne = 0, answerTwo = 0;
+            int answer = 0;
 
-            #region Solution 1
             int maxRed = 12;
             int maxGreen = 13;
             int maxBlue = 14;
@@ -66,13 +28,18 @@ namespace AoC_2023 {
                 }
 
                 if (possible) {
-                    answerOne += int.Parse(gameId);
+                    answer += int.Parse(gameId);
                 }
             }
-            #endregion
-            #region Solution 2
+
+            Console.WriteLine($"DayTwo 1: {answer}");
+        }
+
+        internal static void SolveTwo() {
+            string[] input = FileReader.ReadFileLines(2);
+            int answer = 0;
+
             foreach (string game in input) {
-                string gameId = game.Split(":")[0].Split(" ")[1];
                 string[] colourAndDigits = game.Split(" ").Skip(2).ToArray();
 
                 int minRed = 0;
@@ -96,12 +63,15 @@ namespace AoC_2023 {
                     }
                 }
 
-                answerTwo += minRed * minGreen * minBlue;
+                answer += minRed * minGreen * minBlue;
             }
-            #endregion
 
-            Console.WriteLine($"DayTwo 1: {answerOne}");
-            Console.WriteLine($"DayTwo 2: {answerTwo}");
+            Console.WriteLine($"DayTwo 2: {answer}");
+        }
+
+        internal static void SolveBoth() {
+            SolveOne();
+            SolveTwo();
         }
     }
 }
