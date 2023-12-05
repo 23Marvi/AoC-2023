@@ -67,7 +67,7 @@ namespace AoC_2023.Solutions {
                     answer += gear.Value.Aggregate((current, next) => current * next);
                 }
             }
-                                                                  
+
             Console.WriteLine($"DayThree 2: {answer}");
         }
 
