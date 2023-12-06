@@ -1,7 +1,7 @@
 using System.Drawing;
 
 namespace AoC_2023.Solutions {
-    internal class DayThree {
+    internal class Day3 {
         internal static void SolveOne() {
             string[] input = FileReader.ReadFileLines(3);
             int answer = 0;

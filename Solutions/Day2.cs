@@ -1,5 +1,5 @@
 namespace AoC_2023.Solutions {
-    internal class DayTwo {
+    internal class Day2 {
         internal static void SolveOne() {
             string[] input = FileReader.ReadFileLines(2);
             int answer = 0;
