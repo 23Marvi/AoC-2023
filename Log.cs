@@ -6,6 +6,7 @@ namespace AoC_2023 {
         internal static void WriteLine(char? value) => WriteLine(value, _defaultColour);
         internal static void WriteLine(char? value, ConsoleColor? colour) => WriteLine(value.ToString(), colour);
         internal static void WriteLine(string? value) => WriteLine(value, _defaultColour);
+        internal static void WriteLine(int? value) => WriteLine(value.ToString(), _defaultColour);
 
         internal static void WriteLine(string? value, ConsoleColor? colour) {
             Console.ForegroundColor = colour ?? _defaultColour;
@@ -17,6 +18,7 @@ namespace AoC_2023 {
         internal static void Write(char? value) => Write(value, _defaultColour);
         internal static void Write(char? value, ConsoleColor? colour) => Write(value.ToString(), colour);
         internal static void Write(string? value) => Write(value, _defaultColour);
+        internal static void Write(int? value) => Write(value.ToString(), _defaultColour);
 
         internal static void Write(string? value, ConsoleColor? colour) {
             Console.ForegroundColor = colour ?? _defaultColour;
