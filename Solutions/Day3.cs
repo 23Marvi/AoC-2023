@@ -27,7 +27,7 @@ namespace AoC_2023.Solutions {
                 if (valid) answer += int.Parse(number);
             }
 
-            Console.WriteLine($"DayThree 1: {answer}");
+            Console.WriteLine($"Day3 1: {answer}");
         }
 
         internal static void SolveTwo() {
@@ -68,7 +68,7 @@ namespace AoC_2023.Solutions {
                 }
             }
 
-            Console.WriteLine($"DayThree 2: {answer}");
+            Console.WriteLine($"Day3 2: {answer}");
         }
 
         internal static void SolveBoth() {

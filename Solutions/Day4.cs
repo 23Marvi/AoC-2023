@@ -1,5 +1,3 @@
-using System;
-
 namespace AoC_2023.Solutions {
     internal static class Day4 {
         internal static void SolveOne() {
@@ -16,7 +14,7 @@ namespace AoC_2023.Solutions {
                 else answer += (int)Math.Pow(2, numberOfMatches - 1);
             }
 
-            Console.WriteLine($"DayFour 1: {answer}");
+            Console.WriteLine($"Day4 1: {answer}");
         }
 
         internal static void SolveTwo() {
@@ -37,7 +35,7 @@ namespace AoC_2023.Solutions {
 
             answer = numberOfCards.Sum();
 
-            Console.WriteLine($"DayFour 2: {answer}");
+            Console.WriteLine($"Day4 2: {answer}");
         }
 
         internal static void SolveBoth() {

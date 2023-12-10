@@ -32,7 +32,7 @@ namespace AoC_2023.Solutions {
                 }
             }
 
-            Console.WriteLine($"DayTwo 1: {answer}");
+            Console.WriteLine($"Day2 1: {answer}");
         }
 
         internal static void SolveTwo() {
@@ -66,7 +66,7 @@ namespace AoC_2023.Solutions {
                 answer += minRed * minGreen * minBlue;
             }
 
-            Console.WriteLine($"DayTwo 2: {answer}");
+            Console.WriteLine($"Day2 2: {answer}");
         }
 
         internal static void SolveBoth() {
